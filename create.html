@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="js/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+ 
+
+</head>
+<body>
+
+<style>
+
+.navbar {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: blue;
+    font-size: 19px;
+    padding: 10px 20px;
+  font-weight: 700;
+}
+i.fa-solid.fa-xmark {
+    font-size: 20px;
+    font-weight: 800;
+}
+.fa-xmark:hover {
+
+  color: rgb(171, 55, 55); 
+  transform: scale(1.2); 
+}
+
+p.pages {
+    margin-left: 27px;
+    margin-top: 64px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.card {
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 10px;
+}
+
+    .card-body {
+      text-align: center;
+    }
+
+  
+    i.fa-solid.fa-image {
+    font-size: 30px;
+    color: blue;
+    font-weight: 700;
+}
+i.fa-solid.fa-camera {
+    font-size: 30px;
+    color: blue;
+    font-weight: 700;
+}
+
+span {
+    color: blue;
+  font-weight: 600;
+}
+.card-2 {
+    margin-top: 230px;
+}
+
+.col-sm-6.mk-1 {
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.pages {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 51px;
+}
+
+.pages p.pages {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#post-text {
+  width: 90%;
+  height: 100px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-2 {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.card-2 .row {
+  margin: 0 -15px;
+}
+
+.card-2 .col-sm-6 {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-solid {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.d-flex {
+  margin-top: 10px;
+}
+
+.d-flex span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+button.btn.btn-secondary {
+    width: 96%;
+    margin: 7px;
+    text-align: center;
+    background-color: #007bff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.post-container {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
+
+
+.news-feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  margin-bottom: 10px;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+}
+
+</style> 
+
+
+  <nav class="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Create Post</a>
+      </li>
+    </ul>
+    <i class="fa-solid fa-xmark"></i>
+    
+  </nav>
+
+
+      
+  <div class="pages">
+  <textarea id="post-text" placeholder="What's on your mind?" ></textarea>
+  
+    
+  </div>
+<div class="card-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mk-1">
+      <div class="card">
+            <div class="card-body">
+              <label for="post-image" id="image-label">
+                <i class="fa-solid fa-image" id="image-icon"></i>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                  <span>Photo/Video</span>
+                </div>
+              </label>
+              <input type="file" id="post-image" accept="image/*, video/*" style="display: none">
+            </div>
+          </div>
+          
+        <div class="news-feed"></div>
+    </div>
+  
+      <div class="col-sm-6 mk-1">
+        <div class="card">
+          <div class="card-body">
+            <label for="post-image" id="image-label">
+          <i class="fa-solid fa-camera" id="camera-icon"></i>
+          <div class="d-flex justify-content-center align-items-center mt-2">
+            <span>Camera </span>
+            </div></label>
+            <input type="file" id="post-image" accept="image/*, video/*" style="display: none">
+          </div>
+        </div>
+        
+      </div>
+      <div class="post-container">
+         <button id="post-button"class="btn btn-secondary">Post</button>
+         </div> 
+    </div>
+  </div></div>   
+
+  
+
+
+  
+  
+  
+
+
+
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+<script>
+  document.getElementById('post-image').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    console.log(file);
+  });
+  const backButton = document.querySelector('.fa-xmark');
+  backButton.addEventListener('click', () => {
+    history.back();
+  });
+  
+  </script> 
+
+
+
+
+<script>
+ postButton = document.getElementById('post-button');
+  postContainer = document.getElementById('post-container');
+
+  function displayPosts() {
+
+    savedPosts = JSON.parse(localStorage.getItem('posts')) || [];
+
+    postContainer.innerHTML = '';
+
+    
+    for (const post of savedPosts) {
+      let newPost = document.createElement('div');
+      newPost.innerHTML = `
+        <div class="card-header">
+          <img class="avatar" src="./img/whatsaap.jpeg" alt="User Avatar">
+          <div class="user-info">
+            <div class="user-name">Manful</div>
+            <div class="timestamp">${new Date(post.timestamp).toLocaleString()}</div>
+          </div>
+          <i class="fas fa-ellipsis-h nice-icon ml-auto"></i>
+        </div>
+        <div class="popover-content">
+          <a href="./edit.html"><button class="popover-action-btn">Edit Post</button></a>
+          <button class="popover-action-btn">Delete Post</button>
+        </div>
+        <div class="card-body">
+          <p class="tweet-text">
+            ${post.text}
+          </p>
+        </div>
+        <div class="card-footer">
+          <i class="fa-regular fa-heart" aria-hidden="true"></i>
+          <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+          <i class="fa-solid fa-thumbs-up" aria-hidden="true"></i>
+        </div>`;
+      postContainer.appendChild(newPost);
+    }
+  }
+
+  postButton.addEventListener('click', function() {
+   
+  postText = document.getElementById('post-text').value;
+
+    
+    savedPosts = JSON.parse(localStorage.getItem('posts')) || [];
+
+
+    newPost = {
+      text: postText,
+      timestamp: new Date().toISOString(),
+    };
+
+  
+    savedPosts.unshift(newPost);
+
+
+    localStorage.setItem('posts', JSON.stringify(savedPosts));
+
+
+    document.getElementById('post-text').value = '';
+
+   
+    displayPosts();
+  });
+
+
+  displayPosts();
+</script>
+
+
+</body>
+</html>

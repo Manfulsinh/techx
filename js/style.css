@@ -1,0 +1,87 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+   /*  first pages */
+   
+.tech-x {
+  padding: 20px;
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1.team {
+  font-size: 57px;
+    font-weight: 400;
+    
+}
+
+.spn {
+    display: flex;
+    justify-content: center;
+    margin-top: -11px;
+    color: blue;
+    font-weight: 700;
+    margin-left: 107px;
+}
+
+.spn span {
+    font-size: 40px;
+    color: #336699;
+   
+    padding-bottom: 5px;
+}
+
+.facbook {
+ 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+    width: 100%;
+}
+
+.btn-facebook {
+  background-color: #0d6efd;
+}
+
+.btn-google {
+  background-color: #0d6efd;
+}
+
+
+.fa-brands {
+  margin-right: 5px;
+ } 
+  /* pages and */
+
+
+
+  h1.text-center.teah {
+    font-size: 43px;
+    font-weight: 400;
+    display: flex;
+}
+
+.spne {
+  margin-top: -19px;
+  font-size: 28px;
+  color: blue;
+  font-weight: 700;
+  margin-left: 78px;
+ 
+}
