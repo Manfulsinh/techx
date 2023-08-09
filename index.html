@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,13 +62,13 @@
       </div>
     </div>
   </div>
-
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
   
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  
   <script>
    
     firebaseConfig = {
@@ -78,7 +80,7 @@
       appId: "1:889378987162:web:0555c436e48e972f979323",
       measurementId: "G-3LHTPJJF84"
     };
-    
+  
     firebase.initializeApp(firebaseConfig);
 
     function signIn() {
@@ -86,16 +88,25 @@
       
       firebase.auth().signInWithPopup(provider)
       .then((result) => {
-         user = result.user;
-        console.log("displayName:", user.displayName);
-        console.log("email:", user.email);
-        console.log("uid:", user.uid);
-        console.log("emailVerified:", user.emailVerified);
-      })
-      .catch((error) => {
-        console.error(error.message);
-      });
+    user = result.user;
+    console.log("displayName:", user.displayName);
+    console.log("email:", user.email);
+    console.log("uid:", user.uid);
+    console.log("emailVerified:", user.emailVerified);
+
+  
+    window.location.href = "chat.html";
+})
     }
+
+    
+
+   
+
+
+
+
+
 </script>
 
 </body>
