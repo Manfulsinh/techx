@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -314,8 +315,8 @@ button.btn.btn-dange-3 {
                     </div>
                     <div class="col-sm-6">
                    
-                      <button type="button" class="btn btn-primary-3" id="updateButton">Update</button>
-
+                      <button type="button" class="btn btn-primary-3"  id="update-button">Update</button>
+                    
                     </div>
                   </div>
                   </div>
@@ -382,11 +383,25 @@ button.btn.btn-dange-3 {
 
 
 
+<script>
+
+document.getElementById("update-button").addEventListener("click", function() {
+     text = document.getElementById("myTextArea").value;
+     image = localStorage.getItem('selectedImage'); 
+
+    localStorage.setItem('newPostText', text);
+    localStorage.setItem('newPostImage', image);
+
+ 
+    window.location.href = "chat.html"; 
+});
+
+
+</script>
+
+
+
+
       </body>
       </html>
    
-      
-      
-      
-      
-      
